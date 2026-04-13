@@ -57,7 +57,7 @@ python3 calibrate.py --source ros2 --topic /camera/image_raw
 
 ## Output
 
-After a successful calibration the tool saves:
+After a successful calibration, the tool saves:
 
 - **Camera matrix** – focal lengths and principal point.
 - **Distortion coefficients** – radial and tangential distortion parameters.
