@@ -18,11 +18,11 @@ A tool for **camera calibration** using a [ChArUco board](https://docs.opencv.or
 ---
 
 ## Requirements
-
-**Requirement:** `opencv-python` (or system OpenCV) with `cv2.aruco`. ROS image mode also needs `rclpy`, `sensor_msgs`, and `cv_bridge` (source your ROS workspace before running).
+`opencv-python` (or system OpenCV) with `cv2.aruco`. ROS image mode also needs `rclpy`, `sensor_msgs`, and `cv_bridge` (source your ROS workspace before running).
 
 **Recommendation:** Use the **same resolution and camera settings** you use on the robot so intrinsics match deployment.
 
+## Run calibration
 Input sources (`--source`):
 
 | Mode | Description |
@@ -47,7 +47,7 @@ ros2 run camera calibrate_camera_node.py --source ros2 --topic /camera/image_raw
     --square_length 3.88 --marker_size 2.8 --preview topic
 ```
 
-**Preview and controls (`usb` / `ros2`):**
+## Preview and controls (`usb` / `ros2`):**
 
 | `--preview` | Behavior |
 |-------------|----------|
